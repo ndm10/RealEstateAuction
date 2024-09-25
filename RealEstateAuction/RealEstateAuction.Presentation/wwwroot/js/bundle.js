@@ -112,3 +112,4 @@ function showSlides(n) {
 setInterval(function () {
     plusDivs(1);
 }, 3000);
+

@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace RealEstateAuction.Data.EntityModels;
 
@@ -36,6 +37,15 @@ public partial class RealEstateContext : DbContext
     public virtual DbSet<TicketImage> TicketImages { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
+
+    //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    //{
+    //    var builder = new ConfigurationBuilder()
+    //                .SetBasePath(Directory.GetCurrentDirectory())
+    //                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+    //    IConfigurationRoot configuration = builder.Build();
+    //    optionsBuilder.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
+    //}
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
