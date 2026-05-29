@@ -4,6 +4,7 @@ SQL server: MS SQL 2019 hoặc phiên bản cao hơn (SQL server sẽ hơi nặn
 Tổng quan project:
   - Project sử dụng kiến trúc 3-layer
   - Sử dụng database first (ở đây tôi đã sử dụng cmd để generate ra modal nên bạn sẽ không cần chạy câu lệnh lại)
+  - Hầu hết các config biến môi trường nằm ở appsettings.js và được đọc, mapping ở Program.cs
 
 Cách chạy project:
 1. Đầu tiên chạy
